@@ -751,22 +751,83 @@ html.preloader-active::-webkit-scrollbar {
 
 .transition-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9999;
-  display: flex;
+  inset: 0;
+  z-index: 50000;
+  visibility: hidden;
   pointer-events: none;
 }
 
-.transition-stripe {
-  flex: 1;
+.transition-overlay.is-active {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.transition-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: var(--accent, #035aa6);
+  opacity: 0;
+}
+
+.transition-panel {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
   height: 100%;
-  background: var(--accent, #c70039);
-  transform: scaleY(0);
-  transform-origin: top;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.transition-col {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 100%;
+  background: linear-gradient(
+    165deg,
+    var(--accent-2, #0ea5e9) 0%,
+    var(--accent, #035aa6) 52%,
+    color-mix(in srgb, var(--accent, #035aa6) 82%, #000) 100%
+  );
+  will-change: transform;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.transition-col:nth-child(odd) {
+  filter: brightness(1.04);
+}
+
+.transition-col--center {
+  background: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--accent-2, #0ea5e9) 88%, #fff) 0%,
+    var(--accent, #035aa6) 48%,
+    color-mix(in srgb, var(--accent, #035aa6) 75%, #000) 100%
+  );
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 0 48px rgba(0, 0, 0, 0.25);
+}
+
+.transition-label {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  font-family: poppins, sans-serif;
+  font-size: clamp(2.4rem, 11vw, 5rem);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.12);
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  user-select: none;
 }
 
 .color {
@@ -1463,9 +1524,11 @@ button:hover .index {
 }
 
 #contact.active,
-#contact[style*="block"] {
+#contact[style*="block"],
+#contact[style*="flex"] {
   display: flex !important;
   flex-direction: column;
+  align-items: stretch;
 }
 
 .contact-header {
@@ -1493,24 +1556,32 @@ button:hover .index {
 
 .contact-main-content {
   flex: 1;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
 .contact-content {
-  width: 90%;
-  margin: auto;
+  width: min(1100px, 100%);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 24px 40px;
+  box-sizing: border-box;
   height: auto;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
+  gap: 32px;
 }
 
 .contact-info {
-  width: 40%;
-  height: 500px;
+  width: 42%;
+  flex: 1 1 42%;
+  max-width: 42%;
+  min-height: 500px;
+  height: auto;
   background: url(../images/contact-back.jpg);
   background-position: center;
   background-size: cover;
@@ -1533,9 +1604,12 @@ button:hover .index {
 }
 
 .contact-form {
-  height: 550px;
-  padding-right: 40px;
-  width: 60%;
+  height: auto;
+  min-height: 550px;
+  padding-right: 0;
+  width: 58%;
+  flex: 1 1 58%;
+  max-width: 58%;
   display: flex;
   flex-direction: column;
 }
@@ -1957,6 +2031,24 @@ For devices with smaller width like mobile phone
 
   #contact {
     display: none;
+    min-height: auto;
+    overflow-x: hidden;
+  }
+
+  .contact-header {
+    padding-top: 96px;
+    padding-bottom: 16px;
+    font-size: clamp(1.75rem, 8vw, 2.25rem);
+  }
+
+  .contact-header-caption {
+    font-size: 15px;
+    padding: 8px 12px;
+  }
+
+  .contact-main-content {
+    width: 100%;
+    padding-bottom: 8px;
   }
 
   #breaker {
@@ -2192,24 +2284,31 @@ For devices with smaller width like mobile phone
   }
 
   .contact-content {
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 16px 20px;
     height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 20px;
   }
 
   .contact-info {
-    width: 90%;
-    height: 500px;
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+    height: auto;
+    min-height: 280px;
     background-position: center;
     background-size: cover;
     border-radius: 16px;
-    margin-bottom: 25px;
+    margin-bottom: 12px;
     position: relative;
     overflow: hidden;
+    order: 2;
   }
 
   .contact-info::before {
@@ -2226,19 +2325,23 @@ For devices with smaller width like mobile phone
 
   .contact-form {
     height: auto;
-    width: 90%;
+    min-height: 0;
+    width: 100%;
+    max-width: 100%;
+    flex: none;
     display: flex;
-    padding-bottom: 40px;
-    padding-right: 0px;
+    padding-bottom: 12px;
+    padding-right: 0;
     flex-direction: column;
+    order: 1;
   }
 
   form {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: auto;
-    align-items: center;
+    width: 100%;
+    align-items: stretch;
     position: relative;
   }
 
@@ -2252,9 +2355,10 @@ For devices with smaller width like mobile phone
   }
 
   .input-name {
-    width: 90%;
-    padding: 10px 20px;
-    margin: 14px;
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 16px;
+    margin: 8px 0;
     border-radius: 8px;
     outline: none;
     background: #050505;
@@ -2262,21 +2366,23 @@ For devices with smaller width like mobile phone
     color: whitesmoke;
     font-family: poppins;
     font-size: 16px;
+    box-sizing: border-box;
   }
 
   .form-header {
-    font-size: 22px;
+    font-size: 20px;
     font-family: poppins;
     font-weight: 400;
     color: whitesmoke;
-    padding: 20px;
-    padding-top: 0px;
+    padding: 12px 0 8px;
+    text-align: center;
   }
 
   .input-subject {
-    width: 90%;
-    padding: 10px 20px;
-    margin: 24px;
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 16px;
+    margin: 8px 0;
     border-radius: 8px;
     outline: none;
     background: #050505;
@@ -2284,13 +2390,16 @@ For devices with smaller width like mobile phone
     color: whitesmoke;
     font-family: poppins;
     font-size: 16px;
+    box-sizing: border-box;
   }
 
   .input-textarea {
-    width: 90%;
-    padding: 10px 20px;
-    margin: 15px;
-    height: 140px;
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 16px;
+    margin: 8px 0;
+    min-height: 120px;
+    height: auto;
     border-radius: 8px;
     outline: none;
     background: #050505;
@@ -2298,15 +2407,19 @@ For devices with smaller width like mobile phone
     color: whitesmoke;
     font-family: poppins;
     font-size: 16px;
+    box-sizing: border-box;
   }
 
   form button {
-    padding: 8px 24px;
+    padding: 12px 24px;
     font-family: poppins;
-    font-size: 20px;
+    font-size: 18px;
     color: whitesmoke;
     opacity: 0.8;
-    margin: 20px;
+    margin: 16px 0 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     cursor: pointer;
     border: none;
     border-radius: 8px;
@@ -2329,14 +2442,14 @@ For devices with smaller width like mobile phone
 
   .contect-info-content-line {
     height: auto;
-    padding: 10px;
+    padding: 8px 12px;
     position: relative;
     z-index: 2;
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: left;
-    margin-left: 5%;
+    margin-left: 0;
   }
 
   .contact-info-icon-text {
@@ -4036,4 +4149,17 @@ for tabs and large phones
 
 .cv a button {
   border-radius: 40px !important;
+}
+
+@media only screen and (max-width: 550px) {
+  #contact .footer {
+    position: relative;
+    margin-top: auto;
+    flex-shrink: 0;
+  }
+
+  #contact .color-changer {
+    top: 88px;
+    right: -150px;
+  }
 }

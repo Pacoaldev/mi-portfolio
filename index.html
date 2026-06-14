@@ -95,13 +95,6 @@
         </div>
         <!--loader-end-->
         <!--link-screen-->
-        <div id="transition-overlay" class="transition-overlay">
-            <div class="transition-stripe"></div>
-            <div class="transition-stripe"></div>
-            <div class="transition-stripe"></div>
-            <div class="transition-stripe"></div>
-            <div class="transition-stripe"></div>
-        </div>
         <!--link-screen-->
         <!--Main-Section-->
         <!--Navigator-fullscreen-->
@@ -1003,6 +996,21 @@
         <!--contact end-->
     </div>
     <!--all the divisions-->
+
+    <div id="transition-overlay" class="transition-overlay" aria-hidden="true">
+        <div class="transition-backdrop"></div>
+        <div class="transition-panel">
+            <div class="transition-col"></div>
+            <div class="transition-col"></div>
+            <div class="transition-col"></div>
+            <div class="transition-col transition-col--center"></div>
+            <div class="transition-col"></div>
+            <div class="transition-col"></div>
+            <div class="transition-col"></div>
+        </div>
+        <span class="transition-label"></span>
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/particles.min.js"></script>

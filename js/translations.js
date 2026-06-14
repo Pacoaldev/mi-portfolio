@@ -5,7 +5,7 @@ const translations = {
         "nav-portfolio": "PORTFOLIO",
         "nav-contact": "CONTACT",
 
-        "header-tagline": "[ AI · Automation · DevOps · APIs · Cloud Infrastructure ]",
+        "header-tagline": "[ AI · Automation · DevOps · API · Cloud ]",
         "i-am-a": "I am a",
         "txt-rotate": '[ "AI-NATIVE ENGINEER.", "SOFTWARE & INFRASTRUCTURE BUILDER.", "AUTOMATION SPECIALIST.", "API & SYSTEMS ARCHITECT." ]',
 
@@ -92,7 +92,7 @@ const translations = {
         "nav-portfolio": "PORTFOLIO",
         "nav-contact": "CONTACTO",
 
-        "header-tagline": "[ IA · Automatización · DevOps · APIs · Infraestructura Cloud ]",
+        "header-tagline": "[ IA · Automatización · DevOps · API · Cloud ]",
         "txt-rotate": '[ "INGENIERO NATIVO EN IA.", "CONSTRUCTOR DE SOFTWARE E INFRAESTRUCTURA.", "ESPECIALISTA EN AUTOMATIZACIÓN.", "ARQUITECTO DE APIS Y SISTEMAS." ]',
 
         "about-title": "Sobre <span class='color'>Mí</span>",

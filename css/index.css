@@ -2087,7 +2087,9 @@ For devices with smaller width like mobile phone
   }
 
   .service {
-    height: 320px;
+    height: auto;
+    min-height: 320px;
+    padding-bottom: 25px;
     width: 90%;
     margin: 1.5%;
     background-color: #191919;

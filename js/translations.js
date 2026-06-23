@@ -153,6 +153,9 @@ const translations = {
         "port6-title": "Citabot",
         "port6-desc": "Aplicación Android diseñada para facilitar la reserva de cita previa en la ITV con un agente personalizado que registra si queda una vacante y te manda una notificación.",
 
+        "port7-title": "Timetracker",
+        "port7-desc": "Aplicación web para registrar el tiempo dedicado a tareas en distintos proyectos.",
+
         "btn-github": "Repo GitHub <i class='gg-arrow-right'></i>",
         "btn-architecture": "Arquitectura <i class='gg-arrow-right'></i>",
         "btn-googleplay": "Google Play <i class='gg-arrow-right'></i>",

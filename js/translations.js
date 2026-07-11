@@ -68,6 +68,8 @@ const translations = {
         "port6-desc": "An Android application designed to facilitate appointment booking at car anual inspection centers, with a personalized agent that registers if there is a vacancy and sends you a notification.",
 
         "btn-github": "GitHub Repo <i class='gg-arrow-right'></i>",
+        "btn-ms-marketplace": "MS Marketplace <i class='gg-arrow-right'></i>",
+        "btn-openvsx": "Open VSX <i class='gg-arrow-right'></i>",
         "btn-architecture": "Architecture <i class='gg-arrow-right'></i>",
         "btn-googleplay": "Google Play <i class='gg-arrow-right'></i>",
 
@@ -84,7 +86,8 @@ const translations = {
         "info-email": "Email",
         "btn-submit": "Submit",
         "privacy-policy": "Privacy Policy",
-        "legal-notice": "Legal Notice"
+        "legal-notice": "Legal Notice",
+        "visits-label": "VISITS: "
     },
     "es": {
         "nav-home": "INICIO",
@@ -157,6 +160,8 @@ const translations = {
         "port7-desc": "Aplicación web para registrar el tiempo dedicado a tareas en distintos proyectos.",
 
         "btn-github": "Repo GitHub <i class='gg-arrow-right'></i>",
+        "btn-ms-marketplace": "MS Marketplace <i class='gg-arrow-right'></i>",
+        "btn-openvsx": "Open VSX <i class='gg-arrow-right'></i>",
         "btn-architecture": "Arquitectura <i class='gg-arrow-right'></i>",
         "btn-googleplay": "Google Play <i class='gg-arrow-right'></i>",
 
@@ -173,7 +178,8 @@ const translations = {
         "info-email": "Correo",
         "btn-submit": "Enviar",
         "privacy-policy": "Política de Privacidad",
-        "legal-notice": "Aviso Legal"
+        "legal-notice": "Aviso Legal",
+        "visits-label": "VISITAS: "
     }
 };
 

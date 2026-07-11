@@ -254,9 +254,27 @@ const initTitleMorph = () => {
             const totalChars = REAL.replace(/ /g, '').length;
             setTimeout(() => {
                 textEl.classList.add('state-shimmer');
-                setTimeout(() => textEl.classList.remove('state-shimmer'), 1400);
-            }, totalChars * 45 + 300);
+                setTimeout(() => {
+                    textEl.classList.remove('state-shimmer');
+                    
+                    // Fetch and display visit counter
+                    fetch('https://api.counterapi.dev/v1/pacoaldev/mi-portfolio/up')
+                        .then(res => res.json())
+                        .then(data => {
+                            const countEl = document.getElementById('visit-count');
+                            const counterBox = document.getElementById('visit-counter');
+                            if (countEl && counterBox) {
+                                countEl.innerText = data.count;
+                                gsap.fromTo(counterBox, 
+                                    { opacity: 0, y: 10 }, 
+                                    { opacity: 1, y: 0, duration: 1, ease: 'power3.out' }
+                                );
+                            }
+                        })
+                        .catch(err => console.error('Error fetching counter:', err));
+                }, 1400);
 
+            }, totalChars * 45 + 300);
         }, aliasChars.length * 30 + 500);
     });
 };

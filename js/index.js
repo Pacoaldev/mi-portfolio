@@ -5,6 +5,7 @@ const PRELOADER_HOLD = 0.2;
 let preloaderStarted = false;
 let preloaderPageLoaded = false;
 let preloaderProgressDone = false;
+let visitCounterLoaded = false;
 
 const StepList = [
     { limit: 20, text: "Initializing" },
@@ -75,8 +76,11 @@ const FinishPreloader = () => {
                 introTl
                     .to('#header', { opacity: 1, filter: "url(#distortFilter) blur(0px)", scale: 1, duration: 3.0, ease: "power3.out" })
                     .to('#navigation-bar', { opacity: 1, y: 0, filter: "blur(0px)", duration: 1.5, ease: "power4.out" }, "-=2.5")
-                    .add(() => { initTitleMorph(); }, "-=2.0")
-                    .to('.header-content-box > div:not(.firstline)', {
+                    .add(() => {
+                        initTitleMorph();
+                        loadVisitCounter();
+                    }, "-=2.0")
+                    .to('.header-content-box > div:not(.firstline):not(.visit-counter)', {
                         opacity: 1,
                         y: 0,
                         filter: "blur(0px)",
@@ -94,6 +98,33 @@ const FinishPreloader = () => {
                     }, "-=1.2");
             }
         }, "-=0.08");
+};
+
+const loadVisitCounter = () => {
+    if (visitCounterLoaded) return;
+    visitCounterLoaded = true;
+
+    const countEl = document.getElementById('visit-count');
+    const counterBox = document.getElementById('visit-counter');
+    if (!countEl || !counterBox) return;
+
+    fetch('https://api.counterapi.dev/v1/pacoaldev/mi-portfolio/up')
+        .then((res) => {
+            if (!res.ok) throw new Error(`Counter API responded with ${res.status}`);
+            return res.json();
+        })
+        .then((data) => {
+            if (typeof data.count !== 'number') throw new Error('Invalid counter response');
+            countEl.textContent = data.count.toLocaleString();
+            gsap.fromTo(counterBox,
+                { opacity: 0, y: 10 },
+                { opacity: 1, y: 0, duration: 1, ease: 'power3.out' }
+            );
+        })
+        .catch((err) => {
+            console.error('Error fetching counter:', err);
+            counterBox.style.display = 'none';
+        });
 };
 
 /* ── Title Morph: Pacoaldev → Paco López Alarte ── */
@@ -256,22 +287,6 @@ const initTitleMorph = () => {
                 textEl.classList.add('state-shimmer');
                 setTimeout(() => {
                     textEl.classList.remove('state-shimmer');
-                    
-                    // Fetch and display visit counter
-                    fetch('https://api.counterapi.dev/v1/pacoaldev/mi-portfolio/up')
-                        .then(res => res.json())
-                        .then(data => {
-                            const countEl = document.getElementById('visit-count');
-                            const counterBox = document.getElementById('visit-counter');
-                            if (countEl && counterBox) {
-                                countEl.innerText = data.count;
-                                gsap.fromTo(counterBox, 
-                                    { opacity: 0, y: 10 }, 
-                                    { opacity: 1, y: 0, duration: 1, ease: 'power3.out' }
-                                );
-                            }
-                        })
-                        .catch(err => console.error('Error fetching counter:', err));
                 }, 1400);
 
             }, totalChars * 45 + 300);

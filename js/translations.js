@@ -67,11 +67,18 @@ const translations = {
         "port6-title": "Citabot",
         "port6-desc": "An Android application designed to facilitate appointment booking at car anual inspection centers, with a personalized agent that registers if there is a vacancy and sends you a notification.",
 
+        "port7-title": "Timetracker",
+        "port7-desc": "A web application for tracking time, spent hours on tasks and projects.",
+
+        "port8-title": "ApplyDash",
+        "port8-desc": "A deployed full-stack application to manage job applications, featuring a public demo, activity tracking, TypeScript and a user-friendly dashboard.",
+
         "btn-github": "GitHub Repo <i class='gg-arrow-right'></i>",
         "btn-ms-marketplace": "MS Marketplace <i class='gg-arrow-right'></i>",
         "btn-openvsx": "Open VSX <i class='gg-arrow-right'></i>",
         "btn-architecture": "Architecture <i class='gg-arrow-right'></i>",
         "btn-googleplay": "Google Play <i class='gg-arrow-right'></i>",
+        "btn-demo": "Live Demo <i class='gg-arrow-right'></i>",
 
         "contact-title": "Contact <span class='color'>Me</span>",
         "contact-subtitle": "Get In <span class='color'>Touch</span>",
@@ -159,11 +166,15 @@ const translations = {
         "port7-title": "Timetracker",
         "port7-desc": "Aplicación web para registrar el tiempo dedicado a tareas en distintos proyectos.",
 
+        "port8-title": "ApplyDash",
+        "port8-desc": "Una aplicación full-stack real y desplegada para gestionar candidaturas de empleo, con demo pública, seguimiento de actividad reciente, TypeScript y un panel de control intuitivo.",
+
         "btn-github": "Repo GitHub <i class='gg-arrow-right'></i>",
         "btn-ms-marketplace": "MS Marketplace <i class='gg-arrow-right'></i>",
         "btn-openvsx": "Open VSX <i class='gg-arrow-right'></i>",
         "btn-architecture": "Arquitectura <i class='gg-arrow-right'></i>",
         "btn-googleplay": "Google Play <i class='gg-arrow-right'></i>",
+        "btn-demo": "Demo Online <i class='gg-arrow-right'></i>",
 
         "contact-title": "Contácta<span class='color'>me</span>",
         "contact-subtitle": "Ponte en <span class='color'>Contacto</span>",

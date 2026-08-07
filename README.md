@@ -1,118 +1,60 @@
-# 🌟 Mi Portfolio Personal
+# Paco López Alarte | Senior Backend & Full-Stack Engineer
 
-¡Bienvenido/a! Soy **Paco López Alarte**, Full Stack Developer con base en Valencia, España. Este repositorio muestra una colección de mis trabajos, proyectos destacados y habilidades en desarrollo de software.
+Senior Software Engineer specializing in **Backend Architectures**, **Distributed Systems**, **IoT**, **APIs**, and **AI Integration** (Agentic workflows, MCP, LLMs). 
 
----
-
-## 🚀 Sobre Mí
-
-- 👨‍💻 **Especialidad:** Diseño y desarrollo de sistemas backend robustos y de alto rendimiento.
-- ⚙️ **Enfoque:** Procesamiento de datos en tiempo real, arquitecturas IoT y sistemas distribuidos.
-- 💡 **Valor añadido:** Combinando ingeniería backend con infraestructura moderna e integración de Inteligencia Artificial (IA) para entregar soluciones escalables de principio a fin.
-- 📍 **Ubicación:** Valencia, España
+Valencia, Spain | [pacoaldev@gmail.com](mailto:pacoaldev@gmail.com) | [+34 655866532](tel:+34655866532) | [LinkedIn](https://www.linkedin.com/in/fmlalinked) | [Portfolio (pacoal.dev)](https://www.pacoal.dev)
 
 ---
 
-## 🔨 Qué Construyo y Diseño
+## 🛠️ Core Tech Stack
 
-- 🚗 **Pipelines de datos en tiempo real** — Sistemas de ingesta de alto rendimiento y procesamiento de baja latencia.
-- ⚡ **Arquitecturas orientadas a eventos** — Sistemas distribuidos con comunicación fluida vía MQTT y WebSockets.
-- 🧠 **Soluciones potenciadas por IA** — Integración de modelos de lenguaje grandes (LLMs) en flujos de trabajo escalables.
-- 🦉 **Agentes IA y Herramientas Dev** — Extensión de capacidades IDE mediante MCP y flujos de trabajo con agentes personalizados.
-- 📑 **APIs Empresariales y Backends** — Servicios RESTful limpios, seguros y mantenibles.
-- 🐳 **Infraestructura y Contenedores** — Empaquetado automatizado, orquestación y despliegues sin interrupciones.
+- **Backend & Systems:** Java (Spring Boot), Python (FastAPI, Django), Node.js.
+- **AI & Automation:** Model Context Protocol (MCP), LangChain, Agentic Workflows, LLM APIs.
+- **Data & IoT:** PostgreSQL, MySQL, MongoDB, InfluxDB, MQTT, WebSockets.
+- **DevOps & Cloud:** Docker, Kubernetes, Jenkins CI/CD, AWS, Google Cloud (GCP), Linux.
 
 ---
 
-## 🌐 Portfolio Online
+## 🚀 Highlighted Projects
 
-Versión web online:
-🔗 [https://www.pacoal.dev](https://www.pacoal.dev)
+### 1. [OpenCode MCP](https://github.com/Pacoaldev/opencode-mcp)
+* **Description:** A VSIX extension for VS Code and Antigravity IDE implementing the Model Context Protocol (MCP). It integrates local LLMs, AI agents, and development tools directly into the IDE workspace.
+* **Tech Stack:** TypeScript, VS Code API, MCP, Node.js.
 
----
+### 2. [Epsylon Control Center](https://github.com/Pacoaldev/Epsylon-show)
+* **Description:** AI-powered desktop assistant for automated job discovery and real-time technical interview support.
+* **Tech Stack:** Python, LLMs, Desktop Automation.
 
-## 🛠️ Tecnologías y Herramientas
+### 3. [Medusse IoT Platform](https://github.com/Pacoaldev/medusse-show)
+* **Description:** Industrial IoT monitoring system handling real-time telemetry, ESP32 device simulations, and data pipelines.
+* **Tech Stack:** Next.js, Flutter, REST APIs, IoT Protocols.
 
-<div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring Boot" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django" width="45" />  
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" alt="Angular" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" width="45" />  
-</div>
+### 4. [ApplyDash](https://github.com/Pacoaldev/APPLYDASH)
+* **Description:** Full-stack dashboard for managing job applications. Features activity tracking, analytics, and public live deployment.
+* **Tech Stack:** TypeScript, React, Node.js.
+* **Live Demo:** [applydash.vercel.app](https://applydash.vercel.app/)
 
----
+### 5. [Project Management System (UP4)](https://github.com/Pacoaldev/Gestion-de-Proyectos-UP4)
+* **Description:** Domain-driven project management backend designed for industrial innovation processes.
+* **Tech Stack:** Java, Spring Boot, PostgreSQL.
 
-## 🏆 Proyectos Destacados
+### 6. [ApiNot](https://github.com/Pacoaldev/APIpnot)
+* **Description:** Real-time data pipeline for scraping, processing, and visualising real estate pricing trends across Spain.
+* **Tech Stack:** Java, Spring Boot, Scrapers.
 
-- **🦉 [Opencode-mcp](https://github.com/Fralopala2/opencode-mcp)**  
-  _Extensión VSIX para VSCode y Antigravity que permite usar tu servidor local Opencode con agentes, skills y herramientas MCP con una interfaz amigable desde el IDE._
+### 7. [Citabot](https://github.com/Pacoaldev/Citabot)
+* **Description:** Mobile app connecting to a FastAPI scraper backend to automate vehicle inspection appointment booking with real-time push notifications.
+* **Tech Stack:** Flutter, Python, FastAPI, Web Scraping.
 
-- **🧠 [Epsylon Control Center](https://github.com/Fralopala2/Epsylon-show)**  
-  _Asistente de escritorio potenciado por IA para revolucionar la búsqueda de empleo. Descubrimiento automatizado de ofertas y asistencia inteligente en tiempo real durante entrevistas técnicas._
-
-- **🪼 [Medusse IoT Platform](https://github.com/Fralopala2/medusse-show)**  
-  _Plataforma IoT integral para la gestión y monitorización de dispositivos conectados en entornos industriales._
-
-- **🏭 [Project Management System (UP4)](https://github.com/Fralopala2/Gestion-de-Proyectos-UP4.git)**  
-  _Sistema de gestión de proyectos para innovación industrial desarrollado con Spring Boot._
-
-- **📊 [ApiNot](https://github.com/Fralopala2/APIpnot.git)**  
-  _Plataforma de datos para recopilar, procesar y visualizar precios inmobiliarios en provincias españolas en tiempo real._
-
-- **🚗 [Citabot](https://github.com/Fralopala2/Citabot.git)**  
-  _App en Flutter para Android que automatiza la búsqueda de citas para la ITV conectada a un backend en FastAPI (Python) para scraping y notificaciones._
-
-- **🔥 [SOS REPORT](https://github.com/Fralopala2/fire_notification_app.git)**  
-  _Aplicación para reportar incendios forestales en tiempo real y localizar servicios de emergencia cercanos mediante GPS._
-
-- **🐾 [Chatbot para Clínica Veterinaria](https://github.com/Fralopala2/ChatbotMaskotas.git)**  
-  _Asistente virtual en Python que utiliza la API Gemini de Google y Firestore para automatizar la atención al cliente en una clínica veterinaria._
-
-- **⚽ [Task Management App (FFCV)](https://github.com/Fralopala2/Proyecto-FFCV.git)**  
-  _App full stack con Java, JavaFX y PostgreSQL para la administración de servicios de fútbol._
-
-- **🐶 [Pet clinic Management App (MaskotasApp)](https://github.com/Fralopala2/MaskotasApp.git)**  
-  _Aplicación de escritorio en Java con base de datos SQLite para la gestión integral de mascotas y su historial clínico._
-
-- **🚦 [Semáforo Eléctrico (Django)](https://github.com/Fralopala2/semaforo_electrico.git)**  
-  _Web app en Django que muestra precios eléctricos en tiempo real en España con una interfaz de semáforo para la toma de decisiones._
-
-- **🛍️ [Magento - Hyva Integration](https://www.lladro.com/es_es/)**  
-  _Implementación del frontend Hyva para Magento 2 en Lladró y desarrollo de diversas landing pages._
+### 8. [Timetracker](https://github.com/Pacoaldev/Timetracker)
+* **Description:** Enterprise time tracking application designed for managing resources and project allocation.
+* **Tech Stack:** PHP, Laravel, MySQL.
 
 ---
 
-## 📬 Contacto
+## 📬 Contact & Links
 
-- 📧 **Email:** [pacoaldev@gmail.com](mailto:pacoaldev@gmail.com)
-- 📱 **Teléfono:** +34 655866532
-- 💼 **LinkedIn:** [fmlalinked](https://www.linkedin.com/in/fmlalinked)
-- 👾 **Github** [Github profile](https://github.com/Fralopala2)
-
----
-
-## 🖌️ Personaliza tu Experiencia
-
-Mi portfolio incluye un selector de colores para explorar distintas paletas visuales. ¡Prueba el cambio de color y encuentra tu estilo favorito!
-
----
-
-## 📢 Créditos
-
-Portfolio realizado y mantenido por **Paco López Alarte** © 2026
-
----
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/a8851d3c-6fc1-4a68-a0e4-256b0bc7adc9" alt="logo" width="120" />
-</p>
+- **Web:** [pacoal.dev](https://www.pacoal.dev)
+- **GitHub:** [@Pacoaldev](https://github.com/Pacoaldev)
+- **LinkedIn:** [fmlalinked](https://www.linkedin.com/in/fmlalinked)
+- **Email:** [pacoaldev@gmail.com](mailto:pacoaldev@gmail.com)

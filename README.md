@@ -1,6 +1,6 @@
-# Paco López Alarte | Senior Backend & Full-Stack Engineer
+# Paco López Alarte | Backend & Full-Stack Engineer
 
-Senior Software Engineer specializing in **Backend Architectures**, **Distributed Systems**, **IoT**, **APIs**, and **AI Integration** (Agentic workflows, MCP, LLMs). 
+Software Engineer specializing in **Backend Architectures**, **Distributed Systems**, **IoT**, **APIs**, and **AI Integration** (Agentic workflows, MCP, LLMs). 
 
 Valencia, Spain | [pacoaldev@gmail.com](mailto:pacoaldev@gmail.com) | [+34 655866532](tel:+34655866532) | [LinkedIn](https://www.linkedin.com/in/fmlalinked) | [Portfolio (pacoal.dev)](https://www.pacoal.dev)
 
@@ -34,7 +34,7 @@ Valencia, Spain | [pacoaldev@gmail.com](mailto:pacoaldev@gmail.com) | [+34 65586
 * **Tech Stack:** TypeScript, React, Node.js.
 * **Live Demo:** [applydash.vercel.app](https://applydash.vercel.app/)
 
-### 5. [Project Management System (UP4)](https://github.com/Pacoaldev/Gestion-de-Proyectos-UP4)
+### 5. [Project Management System](https://github.com/Pacoaldev/Gestion-de-Proyectos-UP4)
 * **Description:** Domain-driven project management backend designed for industrial innovation processes.
 * **Tech Stack:** Java, Spring Boot, PostgreSQL.
 

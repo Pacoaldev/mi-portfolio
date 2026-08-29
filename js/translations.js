@@ -5,38 +5,53 @@ const translations = {
         "nav-portfolio": "PORTFOLIO",
         "nav-contact": "CONTACT",
 
-        "header-tagline": "[ AI · Automation · DevOps · API · Cloud ]",
+        "header-tagline": "[ Backend · APIs · Automation · AI · Cloud ]",
         "i-am-a": "I am a",
-        "txt-rotate": '[ "AI-NATIVE ENGINEER.", "SOFTWARE & INFRASTRUCTURE BUILDER.", "AUTOMATION SPECIALIST.", "API & SYSTEMS ARCHITECT." ]',
+        "txt-rotate": '[ "BACKEND DEVELOPER.", "API & SYSTEMS BUILDER.", "AI-ASSISTED ENGINEERING.", "DEVOPS & INFRASTRUCTURE." ]',
 
         "about-title": "About <span class='color'>Me</span>",
         "about-subtitle": "My <span class='color'>Introduction</span>",
-        "about-tagline": "Technology Professional with <span class='color'>14+ Years of Experience</span>",
-        "about-desc": "I spent more than a decade leading IT operations, managing infrastructure, vendors and business-critical systems in multinational environments.<br><br>Later, I specialized in eCommerce technologies, payment gateways, landing pages, analytics and business dashboards.<br><br>Today I combine that experience with AI-assisted development, automation, DevOps practices and cloud technologies to build scalable software, developer tools and intelligent workflows.",
+        "about-tagline": "Backend Developer with <span class='color'>14+ Years of Experience</span>",
+        "about-desc": "I spent more than a decade leading corporate IT at Lladró: help desk, infrastructure, networks, security and business-critical systems in a multinational environment.<br><br>From 2020 to 2024 I specialized in eCommerce — payment gateway integrations (Adyen, PayPal, Amazon Pay), business dashboards and process automation connecting ERP, ecommerce and logistics data.<br><br>Today I focus on backend development (Python, Java), REST APIs, distributed systems and infrastructure, complemented by AI-assisted engineering (MCP, agents) and DevOps practices to ship maintainable, production-ready software.",
         "btn-cv": "Download CV",
 
         "exp-title": "Professional <span class='color'>Experience</span>",
-        "exp1-title": "IT Department <span class='color'>Manager</span>",
-        "exp1-desc": "10 years leading IT operations, infrastructure, vendor management and business-critical systems.",
-        "exp2-title": "eCommerce Technical <span class='color'>Specialist</span>",
-        "exp2-desc": "Managing payment gateways, web platforms, landing pages, dashboards and automation workflows.",
-        "exp3-title": "AI-Powered Software <span class='color'>Engineering</span>",
-        "exp3-desc": "Building software, APIs, developer tools, automations and cloud-native solutions using AI.",
+        "exp1-title": "Stack & Flow — React / Design System <span class='color'>Contributor</span>",
+        "exp1-desc": "<span class='exp-period'>2025 – 2026</span> Collaborative development of an open Design System with React and TypeScript: reusable, accessible components, Storybook documentation, and team code reviews.",
+        "exp2-title": "Lladró S.A. — Ecommerce & IT <span class='color'>Specialist</span>",
+        "exp2-desc": "<span class='exp-period'>2020 – 2024</span> Payment gateway integrations, business dashboards, process automation and frontend work (HTML, CSS, Tailwind) on Magento, aligned with sales and customer experience goals.",
+        "exp3-title": "Lladró S.A. — IT Support <span class='color'>Lead</span>",
+        "exp3-desc": "<span class='exp-period'>2010 – 2020</span> Led the IT department (help desk), infrastructure, networks and security. Automated internal processes and improved availability of critical company systems.",
+
+        "certs-title": "Certifications",
+        "cert1-name": "Claude Code in Action",
+        "cert1-org": "Anthropic",
+        "cert2-name": "Advanced Cybersecurity in Operational Technology Environments",
+        "cert2-org": "Aprendea",
+        "cert3-name": "AWS Generative AI",
+        "cert3-org": "Amazon Web Services",
+        "cert4-name": "AWS Cloud Computing",
+        "cert4-org": "Amazon Web Services",
+        "cert5-name": "Project Management & Agile Fundamentals",
+        "cert5-org": "Santander Academy",
+        "cert6-name": "Microsoft Copilot",
+        "cert6-org": "Santander Academy",
+        "cert-link": "View credential",
 
         "services-title": "My <span class='color'>Services</span>",
         "services-subtitle": "What <span class='color'>I Do</span>",
-        "srv1-title": "AI-Powered Development",
-        "srv1-desc": "Building software faster using AI-assisted workflows, MCP servers, agents and custom developer tooling.",
-        "srv2-title": "DevOps & Infrastructure",
-        "srv2-desc": "Cloud infrastructure, CI/CD pipelines and deployment automation.",
-        "srv3-title": "API & System Integration",
-        "srv3-desc": "Connecting platforms, services, payment systems and business applications.",
-        "srv4-title": "Business Automation",
-        "srv4-desc": "Automating repetitive processes through APIs and intelligent workflows.",
-        "srv5-title": "Developer Tooling",
-        "srv5-desc": "Creating tools that improve developer productivity and accelerate software delivery.",
-        "srv6-title": "Technical Leadership",
-        "srv6-desc": "Bridging business requirements and technical execution through years of experience.",
+        "srv1-title": "Backend & REST APIs",
+        "srv1-desc": "Layered architectures, CRUD endpoints, validations and business logic with Java, Python and Node.js.",
+        "srv2-title": "System & Payment Integration",
+        "srv2-desc": "Connecting platforms, payment gateways (Adyen, PayPal, Amazon Pay) and business applications.",
+        "srv3-title": "Process Automation",
+        "srv3-desc": "Automating repetitive workflows through APIs, scripts and intelligent pipelines.",
+        "srv4-title": "DevOps, Docker & Cloud",
+        "srv4-desc": "Containerization, CI/CD, AWS and reproducible deployments with environment-based configuration.",
+        "srv5-title": "AI-Assisted Developer Tooling",
+        "srv5-desc": "MCP servers, coding agents and IDE extensions that improve developer productivity.",
+        "srv6-title": "IoT & Real-Time Monitoring",
+        "srv6-desc": "MQTT pipelines, time-series data, Grafana dashboards and distributed sensor platforms.",
 
         "skills-title": "My <span class='color'>Skills</span>",
         "skill-cat-ai": "AI & Automation",
@@ -44,34 +59,37 @@ const translations = {
         "skill-cat-devops": "Infrastructure & DevOps",
         "skill-cat-db": "Data & Observability",
         "skill-cat-tools": "Developer Tooling",
-        "skill-cat-frontend": "Business Platforms",
+        "skill-cat-frontend": "Complementary Frontend",
 
         "portfolio-title": "<span class='color'>My</span> Portfolio",
         "portfolio-subtitle": "Some Of My <span class='color'>Works</span>",
 
-        "port1-title": "Opencode chat panel",
-        "port1-desc": "Bringing AI-native workflows directly into the IDE through local LLMs, agents, skills and MCP integrations.",
+        "port1-title": "OpenCode Chat Panel",
+        "port1-desc": "VS Code extension with an MCP server that exposes OpenCode to Claude, Cursor and other assistants. Persistent chat sessions, agent/model selection and real-time events. Published on Microsoft Marketplace and Open VSX.",
 
         "port2-title": "Epsylon Control Center",
-        "port2-desc": "AI-powered platform designed to automate job discovery and provide real-time interview assistance.",
+        "port2-desc": "AI-powered professional training platform: real-time interview copilot, conversational mock interviews, personal knowledge base and automated job search with billing integration.",
 
         "port3-title": "Medusse IoT Platform",
-        "port3-desc": "Industrial IoT platform combining distributed systems, real-time monitoring and scalable backend architecture.",
+        "port3-desc": "End-to-end distributed IoT platform for environmental monitoring: ESP32/Raspberry Pi via MQTT (EMQX), Telegraf, InfluxDB, Grafana, REST API, WebSockets and Docker microservices.",
 
-        "port4-title": "Project Management System",
-        "port4-desc": "Project management system for industrial innovation developed with Spring Boot (Industry, Innovation and Infrastructure).",
+        "port4-title": "TrainerExpert",
+        "port4-desc": "Technical interview simulator with 8 real-world scenarios. PWA with mobile microphone support, Node.js proxy for Gemini/NVIDIA APIs and MIT-licensed open repo for self-hosted practice.",
 
-        "port5-title": "ApiNot",
-        "port5-desc": "API built in Java 17 and Spring Boot for real estate price notification by province and coast.",
+        "port5-title": "ApplyDash",
+        "port5-desc": "Full-stack platform to centralize job applications: REST API, offer scraping, metrics dashboard and deployed demo for tracking candidates, interviews and pipeline status.",
 
-        "port6-title": "Citabot",
-        "port6-desc": "An Android application designed to facilitate appointment booking at car anual inspection centers, with a personalized agent that registers if there is a vacancy and sends you a notification.",
+        "port6-title": "Industrial Project Management System",
+        "port6-desc": "Layered Java backend (Controller–Service–Repository) for industrial innovation projects: users, tasks, states and participants over MySQL with CRUD endpoints and business validations.",
 
-        "port7-title": "Timetracker",
-        "port7-desc": "A web application for tracking time, spent hours on tasks and projects.",
+        "port7-title": "APIpnot",
+        "port7-desc": "Python data platform for scraping, processing and visualizing real estate prices across Spanish provinces in real time, with Pandas, Streamlit and Plotly dashboards.",
 
-        "port8-title": "ApplyDash",
-        "port8-desc": "A deployed full-stack application to manage job applications, featuring a public demo, activity tracking, TypeScript and a user-friendly dashboard.",
+        "port8-title": "Citabot",
+        "port8-desc": "Flutter Android app (Google Play) with FastAPI scraping backend, 30-minute cache, rate limiting, Firebase push notifications and backend deployed on Render.",
+
+        "port9-title": "TimeTracker",
+        "port9-desc": "Production web app (React + Vite) on Vercel with Supabase: live timers, admin/collaborator roles, Kanban board, PDF/CSV reports and real-time sync across devices.",
 
         "btn-github": "GitHub Repo <i class='gg-arrow-right'></i>",
         "btn-ms-marketplace": "MS Marketplace <i class='gg-arrow-right'></i>",
@@ -102,37 +120,52 @@ const translations = {
         "nav-portfolio": "PORTFOLIO",
         "nav-contact": "CONTACTO",
 
-        "header-tagline": "[ IA · Automatización · DevOps · API · Cloud ]",
-        "txt-rotate": '[ "INGENIERO NATIVO EN IA.", "CONSTRUCTOR DE SOFTWARE E INFRAESTRUCTURA.", "ESPECIALISTA EN AUTOMATIZACIÓN.", "ARQUITECTO DE APIS Y SISTEMAS." ]',
+        "header-tagline": "[ Backend · APIs · Automatización · IA · Cloud ]",
+        "txt-rotate": '[ "BACKEND DEVELOPER.", "CONSTRUCTOR DE APIS Y SISTEMAS.", "INGENIERÍA ASISTIDA POR IA.", "DEVOPS E INFRAESTRUCTURA." ]',
 
         "about-title": "Sobre <span class='color'>Mí</span>",
         "about-subtitle": "Mi <span class='color'>Introducción</span>",
-        "about-tagline": "Profesional Tecnológico con <span class='color'>más de 14 años de experiencia</span>",
-        "about-desc": "Pasé más de una década liderando operaciones de TI, gestionando infraestructura, proveedores y sistemas críticos de negocio en entornos multinacionales.<br><br>Más tarde, me especialicé en tecnologías de comercio electrónico, pasarelas de pago, landing pages, analítica y cuadros de mando empresariales.<br><br>Hoy en día combino esa experiencia con desarrollo asistido por IA, automatización, prácticas de DevOps y tecnologías cloud para construir software escalable, herramientas para desarrolladores y flujos de trabajo inteligentes.",
+        "about-tagline": "Backend Developer con <span class='color'>más de 14 años de experiencia</span>",
+        "about-desc": "Pasé más de una década liderando IT corporativa en Lladró: CAU, infraestructura, redes, seguridad y sistemas críticos en un entorno multinacional.<br><br>Entre 2020 y 2024 me especialicé en ecommerce: integración de pasarelas de pago (Adyen, PayPal, Amazon Pay), dashboards de negocio y automatización de procesos conectando ERP, ecommerce y logística.<br><br>Hoy me centro en desarrollo backend (Python, Java), APIs REST, sistemas distribuidos e infraestructura, complementado con ingeniería asistida por IA (MCP, agentes) y prácticas DevOps para entregar software mantenible y listo para producción.",
         "btn-cv": "Descargar CV",
 
         "exp-title": "Experiencia <span class='color'>Profesional</span>",
-        "exp1-title": "Responsable de Departamento de <span class='color'>TI</span>",
-        "exp1-desc": "10 años liderando operaciones de TI, infraestructura, gestión de proveedores y sistemas críticos.",
-        "exp2-title": "Especialista Técnico de <span class='color'>eCommerce</span>",
-        "exp2-desc": "Gestión de pasarelas de pago, plataformas web, páginas de destino, paneles y flujos de trabajo de automatización.",
-        "exp3-title": "Ingeniería de Software Impulsada por <span class='color'>IA</span>",
-        "exp3-desc": "Creación de software, APIs, herramientas de desarrollo, automatizaciones y soluciones nativas de la nube usando IA.",
+        "exp1-title": "Stack & Flow — Colaborador Design System <span class='color'>React</span>",
+        "exp1-desc": "<span class='exp-period'>2025 – 2026</span> Desarrollo colaborativo de un Design System con React y TypeScript: componentes reutilizables y accesibles, documentación en Storybook y code reviews en equipo.",
+        "exp2-title": "Lladró S.A. — Especialista Ecommerce e <span class='color'>IT</span>",
+        "exp2-desc": "<span class='exp-period'>2020 – 2024</span> Integración de pasarelas de pago, dashboards de negocio, automatización de procesos y frontend (HTML, CSS, Tailwind) sobre Magento, alineado con ventas y experiencia de cliente.",
+        "exp3-title": "Lladró S.A. — Responsable Soporte <span class='color'>IT</span>",
+        "exp3-desc": "<span class='exp-period'>2010 – 2020</span> Responsable del departamento IT (CAU), infraestructura, redes y seguridad. Automatización de procesos internos y mejora de la disponibilidad de sistemas críticos.",
+
+        "certs-title": "Certificaciones",
+        "cert1-name": "Claude Code in Action",
+        "cert1-org": "Anthropic",
+        "cert2-name": "Ciberseguridad avanzada en entornos de tecnología operacional",
+        "cert2-org": "Aprendea",
+        "cert3-name": "AWS Generative AI",
+        "cert3-org": "Amazon Web Services",
+        "cert4-name": "AWS Cloud Computing",
+        "cert4-org": "Amazon Web Services",
+        "cert5-name": "Project Management & Agile Fundamentals",
+        "cert5-org": "Santander Academy",
+        "cert6-name": "Microsoft Copilot",
+        "cert6-org": "Santander Academy",
+        "cert-link": "Ver credencial",
 
         "services-title": "Mis <span class='color'>Servicios</span>",
         "services-subtitle": "Lo Que <span class='color'>Hago</span>",
-        "srv1-title": "Desarrollo Impulsado por IA",
-        "srv1-desc": "Construcción de software más rápida utilizando flujos de trabajo asistidos por IA, servidores MCP, agentes y herramientas personalizadas.",
-        "srv2-title": "DevOps e Infraestructura",
-        "srv2-desc": "Infraestructura en la nube, pipelines de CI/CD y automatización de despliegues.",
-        "srv3-title": "Integración de APIs y Sistemas",
-        "srv3-desc": "Conexión de plataformas, servicios, sistemas de pago y aplicaciones empresariales.",
-        "srv4-title": "Automatización de Negocios",
-        "srv4-desc": "Automatización de procesos repetitivos mediante APIs y flujos de trabajo inteligentes.",
-        "srv5-title": "Herramientas de Desarrollo",
-        "srv5-desc": "Creación de herramientas que mejoran la productividad del desarrollador y aceleran la entrega de software.",
-        "srv6-title": "Liderazgo Técnico",
-        "srv6-desc": "Uniendo los requisitos del negocio y la ejecución técnica a través de años de experiencia.",
+        "srv1-title": "Backend y APIs REST",
+        "srv1-desc": "Arquitecturas en capas, endpoints CRUD, validaciones y lógica de negocio con Java, Python y Node.js.",
+        "srv2-title": "Integración de Sistemas y Pagos",
+        "srv2-desc": "Conexión de plataformas, pasarelas de pago (Adyen, PayPal, Amazon Pay) y aplicaciones de negocio.",
+        "srv3-title": "Automatización de Procesos",
+        "srv3-desc": "Automatización de flujos repetitivos mediante APIs, scripts y pipelines inteligentes.",
+        "srv4-title": "DevOps, Docker y Cloud",
+        "srv4-desc": "Contenedores, CI/CD, AWS y despliegues reproducibles con configuración por entorno.",
+        "srv5-title": "Herramientas de Desarrollo con IA",
+        "srv5-desc": "Servidores MCP, agentes de código y extensiones de IDE que mejoran la productividad del desarrollador.",
+        "srv6-title": "IoT y Monitorización en Tiempo Real",
+        "srv6-desc": "Pipelines MQTT, datos time-series, dashboards Grafana y plataformas distribuidas de sensores.",
 
         "skills-title": "Mis <span class='color'>Habilidades</span>",
         "skill-cat-ai": "IA y Automatización",
@@ -140,34 +173,37 @@ const translations = {
         "skill-cat-devops": "Infraestructura y DevOps",
         "skill-cat-db": "Datos y Observabilidad",
         "skill-cat-tools": "Herramientas de Desarrollo",
-        "skill-cat-frontend": "Plataformas de Negocio",
+        "skill-cat-frontend": "Frontend Complementario",
 
         "portfolio-title": "<span class='color'>Mi</span> Portfolio",
         "portfolio-subtitle": "Algunos de Mis <span class='color'>Trabajos</span>",
 
-        "port1-title": "Opencode chat panel",
-        "port1-desc": "Llevando flujos de trabajo nativos de IA directamente al IDE mediante LLMs locales, agentes, habilidades e integraciones MCP.",
+        "port1-title": "OpenCode Chat Panel",
+        "port1-desc": "Extensión VS Code con servidor MCP que expone OpenCode a Claude, Cursor y otros asistentes. Sesiones persistentes, selección de agentes/modelos y eventos en tiempo real. Publicada en Microsoft Marketplace y Open VSX.",
 
         "port2-title": "Centro de Control Epsylon",
-        "port2-desc": "Plataforma impulsada por IA diseñada para automatizar la búsqueda de empleo y ofrecer asistencia en entrevistas en tiempo real.",
+        "port2-desc": "Plataforma de entrenamiento profesional con IA: copiloto de entrevistas en tiempo real, simulacros conversacionales, base de conocimiento personal y búsqueda de empleo automatizada con facturación.",
 
         "port3-title": "Plataforma IoT Medusse",
-        "port3-desc": "Plataforma IoT industrial que combina sistemas distribuidos, monitorización en tiempo real y una arquitectura backend escalable.",
+        "port3-desc": "Plataforma IoT distribuida end-to-end para monitorización ambiental: ESP32/Raspberry Pi vía MQTT (EMQX), Telegraf, InfluxDB, Grafana, API REST, WebSockets y microservicios Docker.",
 
-        "port4-title": "Sistema de Gestión de Proyectos",
-        "port4-desc": "Sistema de gestión de proyectos para innovación industrial desarrollado con Spring Boot (Industria, Innovación e Infraestructura).",
+        "port4-title": "TrainerExpert",
+        "port4-desc": "Simulador de entrevistas técnicas con 8 escenarios reales. PWA con micrófono en móvil, proxy Node.js para APIs Gemini/NVIDIA y repo abierto con licencia MIT para practicar con tu propio perfil.",
 
-        "port5-title": "ApiNot",
-        "port5-desc": "API construida en Java 17 y Spring Boot para gestionar el precio del metro cuadrado segun provincias y si es litoral o no.",
+        "port5-title": "ApplyDash",
+        "port5-desc": "Plataforma full-stack para centralizar candidaturas: API REST, scraping de ofertas, dashboard de métricas y demo desplegada para seguimiento de procesos e entrevistas.",
 
-        "port6-title": "Citabot",
-        "port6-desc": "Aplicación Android diseñada para facilitar la reserva de cita previa en la ITV con un agente personalizado que registra si queda una vacante y te manda una notificación.",
+        "port6-title": "Gestor de Proyectos Industriales",
+        "port6-desc": "Backend Java en capas (Controller–Service–Repository) para proyectos de innovación industrial: usuarios, tareas, estados y participantes sobre MySQL con endpoints CRUD y validaciones de negocio.",
 
-        "port7-title": "Timetracker",
-        "port7-desc": "Aplicación web para registrar el tiempo dedicado a tareas en distintos proyectos.",
+        "port7-title": "APIpnot",
+        "port7-desc": "Plataforma de datos en Python para scraping, procesamiento y visualización de precios inmobiliarios por provincias en tiempo real, con Pandas, Streamlit y dashboards Plotly.",
 
-        "port8-title": "ApplyDash",
-        "port8-desc": "Una aplicación full-stack real y desplegada para gestionar candidaturas de empleo, con demo pública, seguimiento de actividad reciente, TypeScript y un panel de control intuitivo.",
+        "port8-title": "Citabot",
+        "port8-desc": "App Android Flutter (Google Play) con backend FastAPI de scraping, caché de 30 min, rate limiting, notificaciones push Firebase y backend desplegado en Render.",
+
+        "port9-title": "TimeTracker",
+        "port9-desc": "App web en producción (React + Vite) en Vercel con Supabase: cronómetros en vivo, roles admin/colaborador, tablero Kanban, informes PDF/CSV y sincronización en tiempo real.",
 
         "btn-github": "Repo GitHub <i class='gg-arrow-right'></i>",
         "btn-ms-marketplace": "MS Marketplace <i class='gg-arrow-right'></i>",
@@ -197,19 +233,14 @@ const translations = {
 function setLanguage(lang) {
     if (!translations[lang]) return;
 
-    // Save preference
     localStorage.setItem('preferredLang', lang);
 
-    // Update active state on buttons
     document.querySelectorAll('.lang-btn').forEach(btn => {
-        if (btn.dataset.lang === lang) {
-            btn.classList.add('active');
-        } else {
-            btn.classList.remove('active');
-        }
+        btn.classList.toggle('active', btn.dataset.lang === lang);
     });
 
-    // Update all elements with data-i18n
+    document.documentElement.lang = lang;
+
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang][key]) {
@@ -217,18 +248,13 @@ function setLanguage(lang) {
                 el.setAttribute('placeholder', translations[lang][key]);
             } else if (el.classList.contains('txt-rotate')) {
                 el.setAttribute('data-rotate', translations[lang][key]);
-                // Need to re-trigger the typing effect if it's already running, 
-                // but setting the attribute usually gets picked up on the next cycle,
-                // or we just let it be.
             } else {
                 el.innerHTML = translations[lang][key];
 
-                // If it's a navigation link with data-text (used for hover effect), update that too
                 if (el.hasAttribute('data-text')) {
                     el.setAttribute('data-text', translations[lang][key]);
                 }
 
-                // Update href for policy and legal notice
                 if (key === 'privacy-policy') {
                     el.setAttribute('href', lang === 'es' ? 'privacy-policy-es.html' : 'privacy-policy.html');
                 } else if (key === 'legal-notice') {
@@ -239,13 +265,10 @@ function setLanguage(lang) {
     });
 }
 
-// Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
-    // Get saved language or default to english
-    const savedLang = localStorage.getItem('preferredLang') || 'en';
+    const savedLang = localStorage.getItem('preferredLang') || 'es';
     setLanguage(savedLang);
 
-    // Attach click events
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();

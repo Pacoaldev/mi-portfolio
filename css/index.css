@@ -1179,6 +1179,81 @@ html.preloader-active::-webkit-scrollbar {
   opacity: 0.8;
 }
 
+.experience-section,
+.certifications-section {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.exp-period {
+  display: block;
+  font-size: 14px;
+  color: var(--accent, #00A8E8);
+  opacity: 1;
+  margin-bottom: 6px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.certifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.cert-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.cert-info h3 {
+  font-family: poppins, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: whitesmoke;
+  margin: 0 0 4px;
+}
+
+.cert-info p {
+  font-family: poppins, sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.cert-link {
+  flex-shrink: 0;
+  font-family: monospace;
+  font-size: 12px;
+  color: var(--accent, #00A8E8);
+  text-decoration: none;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.cert-link:hover {
+  border-color: var(--accent, #00A8E8);
+  color: #fff;
+}
+
+@media screen and (max-width: 550px) {
+  .cert-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 #skills {
   width: 100%;
   height: auto;

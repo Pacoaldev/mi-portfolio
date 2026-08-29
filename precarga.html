@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>Pacoal.dev — Preloader</title>
+    <title>Paco López Alarte — Precarga</title>
 
     <link rel="stylesheet" href="css/index.css">
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -50,9 +50,10 @@
                         <img src="images/willy wonka logo.png" alt="" class="preloader-logo" width="76" height="76">
                     </div>
                     <div class="preloader-name">
-                        <span class="preloader-name-accent">Paco</span><span class="preloader-name-rest"> López</span>
+                        <span class="preloader-name-accent">Paco</span><span class="preloader-name-rest"> López
+                            Alarte</span>
                     </div>
-                    <p class="preloader-tagline">Backend Developer · Portfolio</p>
+                    <p class="preloader-tagline">Backend Developer · APIs · Automatización · IA</p>
                 </div>
 
                 <div class="preloader-progress-block">
@@ -72,11 +73,11 @@
                         <span class="preloader-step" data-limit="95">04</span>
                         <span class="preloader-step" data-limit="100">05</span>
                     </div>
-                    <div class="progressMeta" id="progressMeta">Initializing</div>
+                    <div class="progressMeta" id="progressMeta">Inicializando</div>
                 </div>
 
                 <div class="preloader-footer">
-                    <span class="preloaderLabel">Loading experience</span>
+                    <span class="preloaderLabel">Cargando experiencia</span>
                     <span class="preloader-year">2026</span>
                 </div>
             </div>
@@ -99,11 +100,11 @@
         const PageContent = document.getElementById("pageContent");
 
         const StepList = [
-            { limit: 20, text: "Initializing" },
-            { limit: 45, text: "Loading interface" },
-            { limit: 70, text: "Preparing content" },
-            { limit: 95, text: "Applying transitions" },
-            { limit: 100, text: "Ready" }
+            { limit: 20, text: "Inicializando" },
+            { limit: 45, text: "Cargando interfaz" },
+            { limit: 70, text: "Preparando contenido" },
+            { limit: 95, text: "Aplicando transiciones" },
+            { limit: 100, text: "Listo" }
         ];
 
         const UpdateProgress = () => {

@@ -8,11 +8,11 @@ let preloaderProgressDone = false;
 let visitCounterLoaded = false;
 
 const StepList = [
-    { limit: 20, text: "Initializing" },
-    { limit: 45, text: "Loading interface" },
-    { limit: 70, text: "Preparing content" },
-    { limit: 95, text: "Applying transitions" },
-    { limit: 100, text: "Ready" }
+    { limit: 20, text: "Inicializando" },
+    { limit: 45, text: "Cargando interfaz" },
+    { limit: 70, text: "Preparando contenido" },
+    { limit: 95, text: "Aplicando transiciones" },
+    { limit: 100, text: "Listo" }
 ];
 
 const UpdateProgress = () => {
